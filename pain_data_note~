@@ -1,0 +1,52 @@
+Currently, we have the following data and functions:
+
+###############################################################
+features.mat:
+	the features which corresponds to the previous paper
+---------------------------------------------------------------
+
+
+###############################################################
+data.mat: 
+	time is "NULL" removed
+	blank entry in value removed
+datapre.m:
+	remove the rows with blank (or no recorded)
+	convert the format of recorded time
+	add a constant value to all the digital time 
+------------------------------------------------------------
+
+
+###############################################################
+normalized_data.mat:
+	the features are normalized (convert to probability which lies in the interval from 0 to 1) (0 is normal (mean))
+normalize.m:
+	normalize the avaliable features (index can see the comment int the begining of the document).
+---------------------------------------------------------------
+
+
+###############################################################
+p_makedata.m:
+	The function is designed to make a matrix to show all the elements of a patient (with pID)
+-----------------------------------------------------------------
+
+p_makedata 
+currently there are questions: in the step :
+time_rows = idxC(feature_rows)
+there should be the same rows, however, its different
+
+
+###############################################################
+painlabels.mat
+	This file saved two variables: 'Pain' and 'Total', in which:
+	'Pain' is supposed to save the number of pain labels
+	'Total' is supposed to save the number of recorded labels
+check_pain_labels.m:
+	The function is designed to find the number of pain and recorded data in all patients
+------------------------------------------------------------------
+
+
+
+
+
+
